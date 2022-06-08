@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+
+    <title>Ejercicio de Arreglos JavaScript </title>
+</head>
+<body>
+    <div class="container py-2">
+        <p class="lead">ingresa usuarios</p>
+        <form>
+            <input id="nombre" type="text" placeholder="ingresa nombre" class="form-control my-2">
+            <input id="genero" type="text" placeholder="ingresa genero" class="form-control my-2">
+            <input id="year" type="number" placeholder="ingresa year" class="form-control my-2">
+            <button id="boton" type="reset" onclick="capturar();" class="btn bnt-success">agregar</button>
+        </form>
+    </div>
+    <div class="container">
+        <table class="table" id="tabla">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>nombre</th>
+                    <th>genero</th>
+                    <th>year</th>
+                </tr>
+            </thead>
+        </table>
+
+    </div>
+    <script>
+      function capturar(){
+        console.log("Guardado!");
+        function Pelis(nombre, genero, year){
+          this.nombre=nombre;
+            this.genero=genero;
+            this.year=year;
+        }
+        var capturarnombre=document.getElementById("nombre").value;
+        console.log(capturarnombre);
+        var capturargenero=document.getElementById("genero").value;
+          console.log(capturargenero);
+        var capturaryear=document.getElementById("year").value;
+          console.log(capturaryear);
+
+        //var sujeto= new Persona("Kurt", 27); //captura estatica
+        // varialble local var sujeto= new Persona(capturarnombre, capturaredad);
+        sujeto= new Pelis(capturarnombre, capturargenero, capturaryear);//variable global
+        //console.log(sujeto);
+        agregar();
+      }
+      var basedatos=[];
+      function agregar(){
+        basedatos.push(sujeto)
+        console.log(basedatos);
+          document.getElementById("tabla").innerHTML += '<tbody><td>' + sujeto.nombre + '</td><td>' + sujeto.genero + '</td><td>' + sujeto.year +'</td></tbody>';
+      };
+    </script>
+
+</body>
+</html>
