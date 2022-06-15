@@ -1,16 +1,26 @@
-function Pelis(nombre, genero, year) {
-    this.nombre = nombre;
-    this.genero = genero;
-    this.year = year;
+function capturar() {
+    console.log("Guardado!");
+    function Pelis(nombre, genero, year) {
+        this.nombre = nombre;
+        this.genero = genero;
+        this.year = year;
+    }
+    var capturarnombre = document.getElementById("nombre").value;
+    console.log(capturarnombre);
+    var capturargenero = document.getElementById("genero").value;
+    console.log(capturargenero);
+    var capturaryear = document.getElementById("year").value;
+    console.log(capturaryear);
+
+    //var sujeto= new Persona("Kurt", 27); //captura estatica
+    // varialble local var sujeto= new Persona(capturarnombre, capturaredad);
+    sujeto = new Pelis(capturarnombre, capturargenero, capturaryear);//variable global
+    //console.log(sujeto);
+    agregar();
 }
-var Pelis1 = new Pelis("akira", "accion", 1998);
-var Pelis2 = new Pelis("interceptor", "aventura", 2022);
-var Pelis3 = new Pelis("morbius", "accion", 2022);
-var Videoclub = [Pelis1, Pelis2, Pelis3];
-console.log(Pelis1);
-console.log(Pelis2);
-console.log(Pelis3);
-console.log(Videoclub);
-console.log(Videoclub[1]);
-
-
+var basedatos = [];
+function agregar() {
+    basedatos.push(sujeto)
+    console.log(basedatos);
+    document.getElementById("tabla").innerHTML += '<tbody><td>' + sujeto.nombre + '</td><td>' + sujeto.genero + '</td><td>' + sujeto.year + '</td></tbody>';
+};

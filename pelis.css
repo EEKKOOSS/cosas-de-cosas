@@ -1,0 +1,106 @@
+﻿body {
+    background-color: orange;
+    background-image: url("https://images.alphacoders.com/996/thumb-1920-996655.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    background-color: black;
+}
+
+h1 {
+    background-color: red;
+    text-align: center;
+    color: black;
+    border-style: groove;
+    border-color: black;
+    margin: auto;
+    font-family: 'Koulen', cursive;
+    margin: 30px;
+    
+}
+ button {
+    background-color: black;
+    border: double;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: blink;
+    display: inline-block;
+    font-size: 16px;
+    margin-inline: 100px;
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/1007/699/748/berserk-anime-girls-anime-boys-night-eclipse-hd-wallpaper-preview.jpg");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+input {
+    background-color: black;
+    border: double;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: blink;
+    display: inline-block;
+    font-size: 16px;
+    margin-inline: 100px;
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/1007/699/748/berserk-anime-girls-anime-boys-night-eclipse-hd-wallpaper-preview.jpg");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+p {
+    color: red;
+}
+th {
+    color: red;
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/656/150/342/berserk-kentaro-miura-guts-manga-wallpaper-preview.jpg");
+    background-size: cover;
+}
+
+div {
+    width: auto;
+    margin: 20px;
+}
+
+footer {
+    background-color: yellow;
+    text-align: center;
+    width: 100%;
+    border-style: solid;
+    border-color: lightyellow;
+    bottom: 0;
+    position: fixed;
+    font-family: 'Koulen', cursive;
+}
+
+aside {
+    background-color: sandybrown;
+    opacity: 0.6;
+    float: left;
+    font-family: 'Koulen', cursive;
+    font-family: 'Lora', serif;
+    font-family: 'Roboto Mono', monospace;
+    width: 300px;
+    height: auto;
+}
+
+
+
+h5 {
+    padding: 20px;
+    margin: auto;
+}
+
+#contactaside {
+    display: inline-block;
+    left: 40%;
+    position: fixed;
+    text-align: center;
+    bottom: 40%;
+}
